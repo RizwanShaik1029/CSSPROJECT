@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOMATO</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .sorting-options {
+      display: flex;
+      justify-content: space-around;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    .sorting-option {
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .sorting-option:hover {
+      background-color: #e0e0e0;
+    }
+       
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #e74c3c;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #search {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #loc {
+            margin-top: 10px;
+        }
+
+        #inspiration,
+        #brands,
+        #restaurants {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .brand-logo {
+            margin: 10px;
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .restaurant {
+            margin: 20px;
+        }
+        .restaurant-card {
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block; 
+    margin-right: 10px;
+}
+.card-container {
+            white-space: nowrap; 
+        }
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.restaurant-card h4 {
+    margin: 5px 0;
+    color: #333;
+}
+
+.restaurant-card h2 {
+    color: #ff6347;
+}
+label {
+      font-size: 18px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    #loc {
+      padding: 8px;
+      font-size: 16px;
+      width: 200px; /* Adjust width as needed */
+    }
+    .my-account-button {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 5px;
+    }
+    .my-account-button:hover {
+      background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ZOMATO</h1>
+</header>
+<div class="location-container">
+    <a href="#" class="my-account-button">My Account</a>
+<a href="index.html" class="home-button">Home</a>
+<form action="" method="get">
+    <input type="text" id="search" name="q" placeholder="Search... dishes or Restaurants">
+    <button type="submit">Search</button>
+</form>
+<div class="location-container">
+    <label for="loc">location</label>
+    <input list="locations" id="loc" name="loc" placeholder="Type to select a location">
+    <datalist id="locations">
+      <option value="Bangalore">
+      <option value="Hyderabad">
+      <option value="Chennai">
+      <option value="Delhi">
+      <option value="Vizag">
+      <option value="Vishakapatnam">
+      <option value="Kakinada">
+      <option value="Tirupati">
+      <option value="Kadapa">
+    </datalist>
+  </div></div>
+
+<section id="inspiration">
+    <h2>Inspiration for your first order</h2>
+    <div class="image-container">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\biriyani 1.jpeg" height="150" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\burger 1.jpeg" alt="" height="150" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\ff 1.jpeg" alt="" height="150" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\staters 1.jpeg" alt="" height="150" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\staters 2.jpeg" alt="" height="150" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\pizza 1.jpg" alt="" height="150" width="auto">
+    </div>
+</section>
+
+<section id="brands">
+    <h2>Top brands for you</h2>
+    <div class="image-container">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\arabian mandi logo.jpeg" height="100" width="auto">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\burger king logo.png" alt="" height="100" width="auto">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\kfc logo.png" alt="" height="100" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\pizza hut logo.png" alt="" height="100" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\tea logo.jpeg" alt="" height="100" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\mc lopgo.png" alt="" height="100" width="auto"> 
+        <img src="C:\Users\91630\Desktop\html tap\index.html\fried chicken logo.png" alt="" height="100" width="auto">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\empire logo.png" alt="" height="100" width="auto">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\friend chcicken 2 logo.png" alt="" height="100" width="auto"> 
+    </div>
+</section><br>
+<center>ALL RESTAURANTS</center>
+<br>
+<div class="sorting-options">
+    <b><div class="sorting-option" onclick="sortFunction(1)">Sort</div></b>
+    <b><div class="sorting-option" onclick="sortFunction(2)">Nearest</div></b>
+    <b><div class="sorting-option" onclick="sortFunction(3)">Greater Offer</div></b>
+    <b><div class="sorting-option" onclick="sortFunction(4)">Rating 4.0+</div></b>
+  </div>
+<div class="card-container">
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent 3.jpeg"alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>Seafood</h2>
+
+</div>
+
+<div class="restaurant-card">
+<a href ="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+    <img src="C:\Users\91630\Desktop\html tap\index.html\restaurent4.jpeg"alt=""></a>
+<h4>Bangalore</h4>
+<h4>Rating - 4.2</h4>
+<h4>Veg and Non-Veg</h4>
+<h4>Ph-no: 9665656565</h4>
+<h2>Empire</h2>
+</div>
+
+<div class="restaurant-card">
+    <a href ="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restaurent5.jpeg"  alt=""></a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.0</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>Ruchis</h2>
+    </div>
+   
+    <div class="restaurant-card">
+        <a href ="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+            <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent 6.jpeg"  alt=""></a>
+        <h4>Bangalore</h4>
+        <h4>Rating - 3.2</h4>
+        <h4>Veg and Non-Veg</h4>
+        <h4>Ph-no: 9665656565</h4>
+        <h2>Mirchi</h2>
+        </div>
+        </div>
+        <div class="card-container">
+    <div class="restaurant-card">
+            <a href ="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+                <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent7.jpeg"  alt=""></a>
+            <h4>Bangalore</h4>
+            <h4>Rating - 4.0</h4>
+            <h4>Veg and Non-Veg</h4>
+            <h4>Ph-no: 9665656565</h4>
+            <h2>Salt & Pepper</h2>
+    </div>
+    
+    <div class="restaurant-card">
+        <a href ="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+            <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent8.jpeg"  alt=""></a>
+        <h4>Bangalore</h4>
+        <h4>Rating - 3.5</h4>
+        <h4>Veg and Non-Veg</h4>
+        <h4>Ph-no: 9665656565</h4>
+        <h2>Andhra Ruchi</h2>
+</div>
+
+<div class="restaurant-card">
+    <a href ="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent9.jpeg"  alt=""></a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.5</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>Talapakkati</h2>
+</div>
+
+<div class="restaurant-card">
+    <a href ="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent10.jpeg"  alt=""></a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>Abhiruchi</h2>
+</div>
+</div>
+<div class="card-container">
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restaurent 11.jpeg"alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>Telugu Ruchi</h2>
+
+</div>
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src= "C:\Users\91630\Desktop\html tap\index.html\restuarent12.jpeg" alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>Lights</h2>
+
+</div>
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent13.jpeg"alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>PUnJAb Grill</h2>
+
+</div>
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent14.jpeg" alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>MOMOS page</h2>
+
+</div>
+</div>
+<div class="card-container">
+
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src= "C:\Users\91630\Desktop\html tap\index.html\restuarent15.jpeg"alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>BANGAlore</h2>
+
+</div>
+
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent16.jpeg" alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>OPEN View</h2>
+
+</div>
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent17.jpeg" alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>PARADISE</h2>
+
+</div>
+<div class="restaurant-card">
+    <a href="C:\Users\91630\Desktop\html tap\index.html\dishes.html">
+        <img src="C:\Users\91630\Desktop\html tap\index.html\restuarent18.jpeg" alt="">
+    </a>
+    <h4>Bangalore</h4>
+    <h4>Rating - 4.1</h4>
+    <h4>Veg and Non-Veg</h4>
+    <h4>Ph-no: 9665656565</h4>
+    <h2>Snehitha restaurant</h2>
+
+</div>
+</div>
+        
+    </body>
+</html>
